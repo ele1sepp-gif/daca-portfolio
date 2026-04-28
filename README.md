@@ -17,7 +17,7 @@ Tehtud tööd
 GitHub Repo + Team Charter - Ele
 Supabase setup -Hugo R
 NotebookLM setup (4 RAG faili) - Rita
-Team Charter Ele
+
 
 - ## Meeskonna link
 https://github.com/ele1sepp-gif/urbanstyle-marketing
