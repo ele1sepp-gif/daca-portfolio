@@ -4,10 +4,9 @@
 UrbanStyle – Marketing
 
 ## Tehtud tööd
-- GitHub repo ja README - Ele
-- Supabase setup -Hugo R
-- NotebookLM setup (4 RAG faili) - Rita
-- Team Charter Ele 
+GitHub Repo + Team Charter - Ele
+Supabase setup -Hugo R
+NotebookLM setup (4 RAG faili) - Rita
 
 ## Refleksioon
 
