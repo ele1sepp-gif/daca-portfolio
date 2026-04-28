@@ -18,6 +18,23 @@ GitHub Repo + Team Charter - Ele
 Supabase setup -Hugo R
 NotebookLM setup (4 RAG faili) - Rita
 
+## KÕIK SÜSTEEMID ÜHENDATUD
+
+**GitHub:** https://github.com/ele1sepp-gif/urbanstyle-marketing  
+**Supabase:** https://supabase.com/dashboard/project/iacbqdybsknisrevemar 
+**NotebookLM:** https://notebooklm.google.com/notebook/dc49676e-0e0e-43ba-b685-4474d82879d1?pli=1
+**Team Charter:** GitHub + https://supabase.com/dashboard/project/iacbqdybsknisrevemar/sql/ee561788-23e6-4c5f-b18b-c20b1c516af9
+
+## Kokkuvõte
+
+**Suurim üllatus:**  
+GitHubi struktuuri ja Supabase ühendamine oli alguses keerulisem kui oodatud.
+
+**Soovitus tulevikuks:**  
+Alustada kohe õige folder struktuuriga, et vältida topelt kaustu.
+
+**Puuduvad andmed:**  
+hetkel pole.
 
 - ## Meeskonna link
 https://github.com/ele1sepp-gif/urbanstyle-marketing
