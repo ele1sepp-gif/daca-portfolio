@@ -13,8 +13,11 @@ See repositoorium sisaldab minu DACA õppeprojekte ja portfoolio.
 ## Projektid
  
 ### Week 0: Onboarding
-- GitHub seadistamine 
-- Supabase seadistamine
+Tehtud tööd
+GitHub Repo + Team Charter - Ele
+Supabase setup -Hugo R
+NotebookLM setup (4 RAG faili) - Rita
+Team Charter Ele
 
 - ## Meeskonna link
 https://github.com/ele1sepp-gif/urbanstyle-marketing
