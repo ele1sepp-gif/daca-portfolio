@@ -23,7 +23,7 @@ NotebookLM setup (4 RAG faili) - Rita
 **GitHub:** https://github.com/ele1sepp-gif/urbanstyle-marketing  
 **Supabase:** https://supabase.com/dashboard/project/iacbqdybsknisrevemar 
 **NotebookLM:** https://notebooklm.google.com/notebook/dc49676e-0e0e-43ba-b685-4474d82879d1?pli=1
-**Team Charter:** GitHub + https://supabase.com/dashboard/project/iacbqdybsknisrevemar/sql/ee561788-23e6-4c5f-b18b-c20b1c516af9
+**Team Charter:** https://github.com/ele1sepp-gif/urbanstyle-marketing/blob/main/charter.md + https://supabase.com/dashboard/project/iacbqdybsknisrevemar/sql/ee561788-23e6-4c5f-b18b-c20b1c516af9
 
 ## Kokkuvõte
 
