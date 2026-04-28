@@ -14,7 +14,10 @@ See repositoorium sisaldab minu DACA õppeprojekte ja portfoolio.
  
 ### Week 0: Onboarding
 - GitHub seadistamine 
-- Supabase seadistamine 
+- Supabase seadistamine
+
+- ## Meeskonna link
+https://github.com/ele1sepp-gif/urbanstyle-marketing
  
 ### Week 1: SQL Põhitõed
 - (tulemas...)
