@@ -7,7 +7,11 @@
 
 ## Peamised õppetunnid
 - Loe küsimus kenasti läbi ja kontrolli antud käsklust mitu korda, eriti kui sa seda ise ei kirjuta ning keegi on selle sulle ette andnud.
-- Kontrolli ka täpselt tabelit, sest mida soovitakse teada saada ning kuidas tabelis on see alamliik märgitud võivad veidi erineda. [Week1sql.sql](https://github.com/user-attachments/files/27438429/Week1sql.sql)
+- Kontrolli ka täpselt tabelit, sest mida soovitakse teada saada ning kuidas tabelis on see alamliik märgitud võivad veidi erineda.
+
+
+## Failid
+[Week1sql.sql](https://github.com/user-attachments/files/27438429/Week1sql.sql)
 
 ## Meeskonna töö
 https://docs.google.com/presentation/d/1aXzLf3nE0F-znkdW4CAMFus0Ee_wwbt3CyUBsSquF4Q/edit?slide=id.p#slide=id.p
