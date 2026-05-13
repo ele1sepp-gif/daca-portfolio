@@ -40,10 +40,10 @@ hetkel pole.
 https://github.com/ele1sepp-gif/urbanstyle-marketing
  
 ### Week 1: SQL Põhitõed
-- (tulemas...)
+SQL algsed käsud: SELECT, FROM, WHERE, ORDER BY
  
 ### Week 2: SQL Andmete Puhastamine
-- (tulemas...)
+Andmete puhastus: Võtmesõna- KONTROLLI 3 korda. Tee test tabelid, ennem muutusi ei tee, kui test tabelite peal on näha, et käsklused toimivad TÄPSELT nii nagu need peavad. Alles siis vii läbi muudatused ja kõige viimasena originaaltabelis.
  
 ## Oskused
  
