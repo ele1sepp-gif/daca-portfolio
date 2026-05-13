@@ -1,7 +1,3 @@
-
- 4. Mida peab sisaldama nädala README.md?
-  See on lühike (paar lauset) kokkuvõte antud nädalast neile, kes sinu
-  portfooliot tulevikus vaatavad. See võiks sisaldada:
-   * Mis oli selle nädala teema/probleem?
-   * Mis oli sinu roll meeskonnas (nt Roll A: Müügiandmete puhastamine)?
-   * Kuidas sa kasutasid AI-d sellel nädalal oma töö tegemiseks?
+Sellel nädalal vaatasime otsa juba raskemale syntaxile ja tuli rea rea haaval läbi käia iga käsklus. Nädala teema oli andmete puhastamine ning tuli eriti ettevaatlik olla, mida ma puhastan või muudan. LÖoomulikult tegin katsed test tabelis ja kõige viimase sammuna alles originaal tabelis.
+Minu selle nädalane roll grupitöös oli kliendiandmetega tegeleda, samuti tegin slided grupi jaoks ning täiendasime ka ühist portfoliot (Urbanstyle-marketing). 
+AI kasutasin koodide lahti mõtestamiseks, mulle oli väga oluline saada aru koodist-selle tuumast ja loogikast, mitte lihtsalt kasutada ette antud näidet töö ära tegemiseks. Tegin endale see nädal korraliku koodide konspekti, kus on iga asi selgelt ära kirjetatud, et tulevikus oleks lihtsam tabeleid analüüsida. 
