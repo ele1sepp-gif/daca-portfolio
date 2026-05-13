@@ -1,5 +1,3 @@
-# daca-portfolio
-Minu DACA õppeprojektid ja portfoolio
 # DACA Portfoolio
  
 **Programm:** Data Analyst Career Accelerator (DACA)
