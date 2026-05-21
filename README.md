@@ -42,7 +42,10 @@ SQL algsed käsud: SELECT, FROM, WHERE, ORDER BY
  
 ### Week 2: SQL Andmete Puhastamine
 Andmete puhastus: Võtmesõna- KONTROLLI 3 korda. Tee test tabelid, ennem muutusi ei tee, kui test tabelite peal on näha, et käsklused toimivad TÄPSELT nii nagu need peavad. Alles siis vii läbi muudatused ja kõige viimasena originaaltabelis.
- 
+
+### Week 3: SQL JOIN
+Tabelite ühendus: See tundub mulle hetkel üks vajalikumaid SQL koode, millega saab teha juba päris analüüsi ning näha tõeliseid tulemusi. Tundsin ennast neid tehes juba, et otsin vajalikke andmeid, mis firma tulevikku abistaks. 
+
 ## Oskused
  
 - **SQL:** PostgreSQL, Supabase
