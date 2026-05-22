@@ -3,6 +3,8 @@
 ## Meeskond
 UrbanStyle – Marketing
 
+Meie teami ühine githubi : ele1sepp-gif/urbanstyle-marketing
+
 ## Tehtud tööd
 GitHub Repo + Team Charter - Ele
 Supabase setup -Hugo R
