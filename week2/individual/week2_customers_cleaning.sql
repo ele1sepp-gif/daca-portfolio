@@ -1,5 +1,5 @@
 
---vaatan mitu rida on customer tabelis.
+--ridade arv customer tabelis.
 SELECT COUNT(*) AS ridade_arv FROM customers_test;
 
 --vaatan mitu duplikaati on e-mailides:
@@ -9,7 +9,8 @@ GROUP BY email
 HAVING COUNT(*) > 1
 ORDER BY koopiate_arv DESC;
 -- 380 inimesel puudus e-mail.
---nüüd otsin duplikaate:
+
+--otsin duplikaate:
 SELECT COUNT(*) AS duplikaatseid_emailigruppe
 FROM (
     SELECT email
@@ -56,9 +57,9 @@ SELECT
     SUM(CASE WHEN first_name IS NULL OR first_name = '' THEN 1 ELSE 0 END) AS null_eesnimi,
     SUM(CASE WHEN last_name IS NULL OR last_name = '' THEN 1 ELSE 0 END) AS null_perenimi
 FROM customers_test;
--- tabelites pole ühtegi ei NULL väärtusega ega tühja lahtrit. tundus uskumatu, kontrollisin eri viisidel.
+-- tabelites pole ühtegi ei NULL väärtusega ega tühja lahtrit, kontrollisin eri viisidel.
 
---Kontrolli linnade nimekujusid — kas on ebajärjekindlusi?
+--Kontrollin linnade nimekujusid — kas on ebajärjekindlusi?
 SELECT city, COUNT(*) AS arv
 FROM customers_test
 GROUP BY city
@@ -79,7 +80,8 @@ SELECT
 FROM customers_test
 GROUP BY LOWER(TRIM(city))
 ORDER BY arv DESC;
---saan koguaeg vastuseid, mis ei vasta küsimusele mida küsitakse, proovin seda syntaxit:
+
+
 SELECT 
     city,
     COUNT(*) AS arv
@@ -96,18 +98,20 @@ SELECT
 FROM customers_test;
 --telefoni numbrid on kõigil märgitud, aga puuduvaid e-maile on 380.
 
---vihje?
+
 SELECT city, COUNT(*) FROM customers_test
 GROUP BY city HAVING COUNT(*) > 1;
---edasijõudnute ülesanded:
+
 --null nimede asendamine:
 UPDATE customers_test
 SET first_name = 'Tundmatu'
 WHERE first_name IS NULL OR first_name = '';
+
 --linnanimed muudan kõik ühesuguseks ehk suur algustäht:
 UPDATE customers_test
 SET city = INITCAP(TRIM(city))
 WHERE city != INITCAP(TRIM(city));
+
 --e-mailide korrastus, et e-mailid oleksid ka kõik samasuguste tähtedega- väikesed.
 UPDATE customers_test
 SET email = LOWER(TRIM(email))
@@ -117,6 +121,7 @@ SELECT city, COUNT(*) AS arv
 FROM customers_test
 GROUP BY city
 ORDER BY city;
+
 --telefoni nr korda:
 SELECT phone,
     CASE
