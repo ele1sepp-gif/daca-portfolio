@@ -49,7 +49,7 @@ Tabelite ühendus: See tundub mulle hetkel üks vajalikumaid SQL koode, millega 
 ## Oskused
  
 - **SQL:** PostgreSQL, Supabase
-- **Python:** pandas, plotly (tulemas...)
+- **Python:** pandas, plotly 
 - **Visualiseerimine:** Power BI / Streamlit (tulemas...)
 - **Tööriistad:** Git, GitHub, VS Code
  
