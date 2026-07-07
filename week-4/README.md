@@ -1,73 +1,129 @@
-# Week 4 – SQL agregatsioon
+# Week 4 – SQL Aggregation & Business Reporting
 
 ## Ülevaade
 
-Neljandal nädalal keskendusime SQL agregatsioonile ning õppisime koostama koondanalüüse kasutades `GROUP BY`, `HAVING`, CTE-sid ja aknafunktsioone (Window Functions).
+Selles projektis analüüsiti UrbanStyle ettevõtte müügi-, toote- ja inventuuriandmeid eesmärgiga luua juhtkonnale ülevaade ettevõtte tulemuslikkusest ning toetada andmepõhiseid otsuseid.
 
-Projekti eesmärk oli koostada UrbanStyle ettevõtte juhtkonnale koondraportid, mis aitaksid teha andmepõhiseid otsuseid müügi, klientide, inventuuri ja turunduse kohta.
+Analüüsi eesmärk oli mõista:
+- millised tootekategooriad genereerivad enim väärtust;
+- kuidas müük ja laoseis omavahel suhestuvad;
+- millised tooted vajavad rohkem tähelepanu;
+- millised kategooriad mõjutavad ettevõtte kasumlikkust.
 
----
-
-## Õpieesmärgid
-
-Selle projekti käigus harjutasin:
-
-* andmete koondamist (`GROUP BY`);
-* agregaatfunktsioonide kasutamist (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`);
-* `HAVING` klausli kasutamist;
-* CTE-de (Common Table Expression) koostamist;
-* aknafunktsioonide (`ROW_NUMBER`) kasutamist;
-* SQL tulemuste tõlgendamist ärilisest vaatenurgast.
+Analüüs viidi läbi SQL-i abil, kasutades agregatsioonifunktsioone, CTE-sid ja aknafunktsioone.
 
 ---
 
-## Minu panus
+# Ärilised küsimused
 
-Minu roll meeskonnas oli **Roll C – Inventuuristatistika**.
+Analüüsi käigus otsiti vastuseid järgmistele äriküsimustele:
 
-Analüüsi käigus uurisin:
-
-* tootekategooriate suurust ja hinnataset;
-* keskmist kasumimarginaali eurodes ja protsentides;
-* müüdud koguseid kategooriate lõikes;
-* TOP 3 enim müüdud tooteid igas kategoorias;
-* laoseisu ja müügimahtude omavahelist seost.
-
-Analüüsi põhjal selgus, et müügimahud olid erinevate kategooriate vahel üllatavalt sarnased, kuigi toodete arv ja hinnatase varieerusid märkimisväärselt.
+- Millised tootekategooriad on suurima müügimahuga?
+- Millistes kategooriates on kõrgeim keskmine hind ja kasumimarginaal?
+- Millised tooted moodustavad suurima osa müügist?
+- Millised tooted liiguvad aeglaselt ning vajavad tähelepanu?
+- Kas olemasolev laoseis vastab tegelikule müüginõudlusele?
 
 ---
 
-## Peamised leiud
+# Minu panus
 
-* Müüdud kogused kategooriate lõikes olid üsna ühtlased (ligikaudu 3 200–4 100 toodet).
-* Kõige rohkem tooteid sisaldas meeste riiete kategooria (82 toodet), kuid seal leidus ka kõige enam aeglasemalt müüvaid tooteid.
-* Kõrgeim keskmine müügihind ja kasumimarginaal eurodes olid jalanõude kategoorias (keskmine hind 214 € ja marginaal 69,56 €).
-* Suurim kasumimarginaal protsentides oli laste riiete ja aksessuaaride kategoorias (33%).
-* TOP 3 toodete müügimahud olid kategooriate vahel üsna sarnased.
-* Laoseis oli kõikides kategooriates võrreldaval tasemel (ligikaudu 33 000–45 000 toodet), kuid laoseis ei liikunud alati samas tempos müügiga.
+Minu vastutus oli **Inventuuristatistika analüüs**.
 
----
+Analüüsisin:
 
-## Soovitused
-
-Analüüsi põhjal soovitasin üle vaadata aeglasemalt liikuvate toodete hinnastamise ja turundustegevused ning hinnata, kas laoseis vastab tegelikule müüginõudlusele. Paremini tasakaalustatud laovarud aitaksid vähendada seisvat kaupa ja parandada varude efektiivsust.
+- tootekategooriate suurust ja hinnataset;
+- toodete keskmist kasumimarginaali;
+- müügimahtusid kategooriate lõikes;
+- TOP toodete mõju müügitulemustele;
+- laoseisu ja müügi vahelist seost.
 
 ---
 
-## Meeskonna peamised järeldused
+# Analüüsi tehnikad
 
-Meeskonna analüüsi tulemusena selgus, et müügitrend langes järjepidevalt pärast 2024. aasta lõppu. Kategooriate müügimahud olid oodatust ühtlasemad ning VIP-kliente oli küll kõige vähem, kuid nende keskmine käive kliendi kohta oli suurim. Turunduskanalitest osutus kõige edukamaks Google.
+Kasutasin järgmisi SQL tehnikaid:
 
-Soovitasime keskenduda aeglaselt liikuvate toodete optimeerimisele, arendada lojaalsusprogrammi regulaarsete klientide kasvatamiseks ning hoida olemasolevaid VIP-kliente. Turunduseelarve suunamisel soovitasime eelistada Google'i, Facebooki ja Direct-kanalit.
+- `GROUP BY` – andmete koondamine kategooriate ja segmentide kaupa;
+- `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` – põhilised mõõdikud;
+- `HAVING` – filtreerimine pärast agregeerimist;
+- `CTE (Common Table Expression)` – keerukamate analüüside struktureerimine;
+- `ROW_NUMBER()` – toodete järjestamine kategooriate sees;
+- `JOIN` – müügi, toodete ja inventuuriandmete ühendamine.
 
 ---
 
-## AI kasutamine
+# Pealmised leiud
 
-Kasutasin ChatGPT abi keerukamate SQL päringute kontrollimisel ning CTE-de ja aknafunktsioonide loogika täpsustamisel. AI aitas leida võimalusi päringute parandamiseks ja muuta analüüsi selgemaks.
+Analüüs näitas, et:
+
+### Tootekategooriad
+
+- Müügimahud olid kategooriate vahel suhteliselt sarnased, jäädes ligikaudu vahemikku 3200–4100 müüdud toodet.
+- Meeste riiete kategoorias oli kõige rohkem erinevaid tooteid, kuid seal esines rohkem aeglasemalt liikuvaid tooteid.
+- Jalanõude kategoorias oli kõrgeim keskmine müügihind ning suurim eurodes arvutatud marginaal.
+
+### Kasumlikkus
+
+- Kõrgeim keskmine marginaal eurodes tuli jalanõude kategooriast:
+  - keskmine hind ligikaudu 214 €
+  - keskmine marginaal ligikaudu 69,56 €
+
+- Protsentuaalselt olid tugevad laste riiete ja aksessuaaride kategooriad.
+
+### Tootetaseme analüüs
+
+- TOP 3 toodete müügimahud olid kategooriate vahel üsna tasakaalus.
+- Üksikud tooted ei moodustanud liiga suurt osa kogu müügist, mis viitab mitmekesisele tooteportfellile.
+
+### Inventuur
+
+- Laoseis oli kategooriate vahel sarnasel tasemel.
+- Kõrge laoseis ei tähendanud alati suuremat müüki, mis viitab vajadusele optimeerida varude planeerimist.
 
 ---
 
-## Olulisemad õppetunnid
+# Ärilised soovitused
 
-See nädal õpetas mulle, kuidas koostada koondanalüüse, mis aitavad teha ettevõttes strateegilisi otsuseid. Lisaks SQL-i tehniliste oskuste arendamisele sain paremini aru, kuidas koondandmeid tõlgendada ning siduda need praktiliste äriliste soovitustega.
+Analüüsi põhjal soovitasin:
+
+- hinnata aeglasemalt liikuvate toodete hinnastamist;
+- vähendada liigset laovaru toodetel, mille müügikiirus on madal;
+- siduda inventuuri planeerimine tugevamalt tegeliku müüginõudlusega;
+- keskenduda toodetele ja kategooriatele, mille marginaal on kõrgem.
+
+Paremini tasakaalustatud laohaldus aitab vähendada seisvat kaupa ning parandada ettevõtte efektiivsust.
+
+---
+
+# Meeskonna kokkuvõte
+
+Meeskonna ühine analüüs näitas:
+
+- müügitrend langes pärast 2024. aasta lõppu;
+- VIP-kliente oli vähem, kuid nende keskmine väärtus oli kõige suurem;
+- Google oli kõige efektiivsem turunduskanal;
+- lojaalsusprogrammi arendamine võiks aidata kasvatada korduvklientide arvu.
+
+---
+
+# Kasutatud vahendid
+
+- PostgreSQL
+- SQL
+- Supabase
+- GitHub
+
+---
+
+# AI Kasutus
+
+Kasutasin ChatGPT abi SQL päringute kontrollimisel, keerukamate CTE-de ja aknafunktsioonide loogika täpsustamisel ning analüüsi tulemuste ärilisemaks sõnastamisel.
+
+---
+
+# Järeldus
+
+See projekt näitas, kuidas SQL abil saab muuta toorandmed struktureeritud äriraportiteks.
+
+Lisaks tehnilistele päringutele oli oluline osata tulemusi tõlgendada ning siduda need praktiliste soovitustega, mis aitavad ettevõttel teha paremaid otsuseid.
