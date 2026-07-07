@@ -1,37 +1,82 @@
 ```javascript
-// DACA Portfolio
-// Ele Sepp
+// ==========================
+// Smooth scrolling navigation
+// ==========================
 
 
-// Smooth appearance animation when scrolling
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener("click", function(e) {
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if (target) {
+
+            e.preventDefault();
+
+            target.scrollIntoView({
+
+                behavior: "smooth"
+
+            });
+
+        }
+
+    });
+
+});
+
+
+
+
+
+// ==========================
+// Fade-in animation on scroll
+// ==========================
+
 
 const sections = document.querySelectorAll(".section, .project-card, .skill");
 
 
 const observer = new IntersectionObserver(
-    entries => {
 
-        entries.forEach(entry => {
+(entries) => {
 
-            if (entry.isIntersecting) {
+    entries.forEach(entry => {
 
-                entry.target.classList.add("show");
 
-            }
+        if(entry.isIntersecting) {
 
-        });
 
-    },
-    {
-        threshold: 0.15
-    }
+            entry.target.classList.add("show");
+
+
+        }
+
+
+    });
+
+},
+
+
+{
+
+    threshold: 0.15
+
+}
+
 );
+
 
 
 
 sections.forEach(section => {
 
+
+    section.classList.add("hidden");
+
     observer.observe(section);
+
 
 });
 ```
