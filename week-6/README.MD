@@ -1,72 +1,149 @@
-# Week 6 – Andmete visualiseerimine ja andmelood
+# Nädal 6 – Andmete visualiseerimine ja äriline andmelugu
 
 ## Ülevaade
 
-Kuuendal nädalal keskendusime andmete visualiseerimisele ning andmelugude (data storytelling) koostamisele. Eesmärk oli luua juhtkonnale arusaadav ja visuaalselt selge dashboard, mis ei näita ainult numbreid, vaid aitab mõista nende tähendust ning toetab otsuste tegemist.
+Selles projektis keskendusin andmete visualiseerimisele ja ärilise andmeloo (Data Storytelling) loomisele.
 
-Projektis analüüsisime UrbanStyle ettevõtte erinevaid müügikanaleid ja kauplusi. Iga meeskonnaliige koostas ühe asukoha dashboard'i koos lühikese ärilise narratiiviga.
+Eesmärk oli luua dashboard, mis ei näita ainult mõõdikuid, vaid aitab mõista ettevõtte müügikäitumist, tuvastada olulisi trende ning toetada juhtkonna otsuseid.
 
----
+Analüüs keskendus UrbanStyle ettevõtte erinevatele müügikohtadele ja kanalitele:
 
-## Õpieesmärgid
-
-Selle projekti käigus harjutasin:
-
-* Power BI dashboard'i täiustamist;
-* KPI-de ja erinevate diagrammide loomist;
-* andmete filtreerimist konkreetse asukoha järgi;
-* annotatsioonide ja viitejoonte kasutamist visualiseeringutel;
-* andmete esitlust läbi andmeloo (Data Storytelling);
-* juhtidele suunatud kokkuvõtete koostamist.
+- Tallinn
+- Tartu
+- Pärnu
+- E-pood
 
 ---
 
-## Minu panus
+# Äriprobleem
 
-Minu roll meeskonnas oli **Roll A – Tallinna kaupluse dashboard**.
+Ettevõtte müügitulemused võivad erineda sõltuvalt asukohast ja müügikanalist.
 
-Koostasin Tallinna kaupluse interaktiivse dashboard'i, mis sisaldas:
+Juhtkonna jaoks oli oluline mõista:
 
-* KPI-kaarte (käive, tellimuste arv ja keskmine tellimus);
-* müügitrendi kuude lõikes;
-* TOP 5 enim müüdud toodete ülevaadet;
-* kliendisegmentide jaotust;
-* annotatsioone ning viitejoont olulisemate trendide esiletoomiseks.
+- millised müügikohad toimivad kõige paremini;
+- kuidas muutuvad müügid ajas;
+- millised kanalid vajavad rohkem tähelepanu;
+- kus on suurim kasvupotentsiaal.
 
-Lisaks koostasin dashboard'i juurde lühikese andmeloo, mis tõi välja peamised ärilised tähelepanekud ja soovitused juhtkonnale.
-
----
-
-## Peamised leiud
-
-* Tallinna kauplus teenis üle **1 miljoni euro** käivet ning oli ettevõtte suurim füüsiline kauplus.
-* Müük oli selgelt hooajaline – tugev kasv suvekuudel ning rekordiline müügitulemus 2024. aasta detsembris (ligikaudu 64 000 €).
-* TOP 5 toodete müügimahud olid üsna võrdsed, mis näitas tasakaalustatud tooteportfelli ja väiksemat sõltuvust üksikutest toodetest.
-* Ligikaudu 40% klientidest ei kuulunud lojaalsusprogrammi, mis viitas täiendavale kasvupotentsiaalile kliendisuhete arendamisel.
-* Tallinna müügimustrid võivad olla heaks võrdlusaluseks teiste kaupluste kampaaniate ja hooajaliste tegevuste planeerimisel.
+Selleks oli vaja muuta müügiandmed visuaalseks ülevaateks, mille põhjal saab teha praktilisi otsuseid.
 
 ---
 
-## Soovitused
+# Minu panus
 
-Analüüsi põhjal soovitasin kasutada Tallinna edukaid hooajalisi müügiperioode teiste kaupluste turundus- ja kampaaniaplaanide kujundamisel. Samuti võiks suurendada lojaalsusprogrammi kasutajate arvu, et kasvatada korduvoste ning parandada kliendiväärtust.
+Minu roll projektis oli:
+
+**Tallinna kaupluse dashboard**
+
+Koostasin interaktiivse Power BI dashboardi, mis sisaldas:
+
+- käibe KPI-d;
+- tellimuste arvu;
+- keskmise ostukorvi väärtust;
+- müügitrendi kuude lõikes;
+- TOP 5 enim müüdud toodete analüüsi;
+- kliendisegmentide jaotust;
+- annotatsioone oluliste trendide esiletoomiseks.
+
+Lisaks koostasin dashboardi juurde ärilise narratiivi, mis selgitas peamisi tähelepanekuid ja võimalikke tegevusi.
 
 ---
 
-## Meeskonna peamised järeldused
+# Kasutatud analüüsimeetodid
 
-Meeskonna töö tulemusena valmisid eraldi dashboard'id Tallinna, Tartu, Pärnu ning e-poe jaoks. Erinevate asukohtade võrdlus näitas, et igal müügikanalil on oma tugevused ja väljakutsed.
+Dashboardi loomisel kasutasin:
 
-Tallinn paistis silma stabiilse müügi ja tugeva hooajalisusega, Tartu vajas tähelepanu langeva müügitrendi tõttu, Pärnu tulemusi mõjutas selgelt turismihooaeg ning e-pood näitas kõige suuremat kasvupotentsiaali.
-
----
-
-## AI kasutamine
-
-Kasutasin ChatGPT abi dashboard'i narratiivi sõnastamisel, juhtkonnale suunatud kokkuvõtte koostamisel ning visualiseeringute ärilise tõlgenduse parandamisel. AI aitas muuta tehnilised tulemused selgemaks ja siduda need praktiliste juhtimissoovitustega.
+- KPI mõõdikuid ettevõtte tulemuslikkuse hindamiseks;
+- ajapõhist trendianalüüsi;
+- toodete müügitulemuste võrdlust;
+- kliendisegmentide analüüsi;
+- annotatsioone ja viitejooni oluliste sündmuste rõhutamiseks.
 
 ---
 
-## Olulisemad õppetunnid
+# Peamised leiud
 
-See nädal õpetas mulle, et hea dashboard ei koosne ainult ilusatest graafikutest. Oluline on osata andmeid tõlgendada, tuua välja kõige olulisemad tähelepanekud ning esitada need selge ja loogilise loona, mis aitab juhtidel teha paremaid otsuseid. Lisaks sain parema arusaama sellest, kuidas visualiseerimise abil rõhutada olulisi trende ja muuta keerukad andmed lihtsamini mõistetavaks.
+## Tallinna kaupluse tulemuslikkus
+
+- Tallinna kauplus teenis üle 1 miljoni euro käivet.
+- Tegemist oli ettevõtte suurima füüsilise kauplusega.
+- Müügitulemused olid üldiselt stabiilsed.
+
+---
+
+## Müügi hooajalisus
+
+- Müügis esines selge hooajaline muster.
+- Suvekuudel toimus tugev kasv.
+- Kõrgeim müügitulemus saavutati 2024. aasta detsembris (ligikaudu 64 000 €).
+
+See viitab vajadusele planeerida kampaaniaid ja varusid vastavalt hooajalisele nõudlusele.
+
+---
+
+## Toodete tulemuslikkus
+
+- TOP 5 toodete müügimahud olid suhteliselt tasakaalus.
+- Ettevõte ei sõltunud üksikust tootest, vaid müük jagunes mitme tugeva toote vahel.
+
+---
+
+## Kliendikäitumine
+
+- Ligikaudu 40% klientidest ei kuulunud lojaalsusprogrammi.
+- See näitab võimalust suurendada korduvoste ja parandada kliendisuhteid.
+
+---
+
+# Ärilised soovitused
+
+Analüüsi põhjal soovitasin:
+
+- kasutada Tallinna kaupluse edukaid müügiperioode teiste asukohtade kampaaniate planeerimisel;
+- suurendada lojaalsusprogrammi kasutajate osakaalu;
+- keskenduda korduvostude kasvatamisele;
+- kasutada hooajalisi trende müügi ja varude planeerimisel.
+
+---
+
+# Meeskonna analüüsi kokkuvõte
+
+Meeskonna dashboardide võrdlus näitas, et erinevatel müügikanalitel olid erinevad tugevused:
+
+### Tallinn
+- tugev ja stabiilne müük;
+- suurim kogukäive;
+- selge hooajalisus.
+
+### Tartu
+- suurem tähelepanuvajadus langeva müügitrendi tõttu.
+
+### Pärnu
+- tulemusi mõjutas tugevasti turismihooaeg.
+
+### E-pood
+- suurim kasvupotentsiaal ja võimalus suurendada ettevõtte digitaalset müüki.
+
+---
+
+# Kasutatud tööriistad
+
+- Power BI
+- SQL
+- Supabase
+- GitHub
+
+---
+
+# AI kasutamine
+
+AI aitas muuta analüüsi tulemused selgemaks ja siduda need praktiliste soovitustega.
+
+---
+
+# Analüüsi põhisõnum
+
+Edukas dashboard ei seisne ainult graafikute loomises, vaid oskuses tuua andmetest välja kõige olulisem info ning esitada see viisil, mis aitab ettevõttel paremaid otsuseid teha.
+
+Andmete visualiseerimine muudab keerulise info arusaadavaks ning aitab ühendada numbrid tegelike äriliste tegevustega.
