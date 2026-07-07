@@ -1,59 +1,81 @@
-# DACA Portfoolio
- 
-**Programm:** Data Analyst Career Accelerator (DACA)
-**Osaleja:** Ele Sepp
-**Algus:** 28.04.2026
- 
-## Kirjeldus
- 
-See repositoorium sisaldab minu DACA õppeprojekte ja portfoolio.
- 
-## Projektid
- 
-### Week 0: Onboarding
-Tehtud tööd
-GitHub Repo + Team Charter - Ele
-Supabase setup -Hugo R
-NotebookLM setup (4 RAG faili) - Rita
+# Tere! 👋 Mina olen Ele
 
-## KÕIK SÜSTEEMID ÜHENDATUD
+## 📊 Andmeanalüütik | SQL | Python | Power BI | PostgreSQL
 
-**GitHub:** https://github.com/ele1sepp-gif/urbanstyle-marketing  
-**Supabase:** https://supabase.com/dashboard/project/iacbqdybsknisrevemar 
-**NotebookLM:** https://notebooklm.google.com/notebook/dc49676e-0e0e-43ba-b685-4474d82879d1?pli=1
-**Team Charter:** https://github.com/ele1sepp-gif/urbanstyle-marketing/blob/main/charter.md + https://supabase.com/dashboard/project/iacbqdybsknisrevemar/sql/ee561788-23e6-4c5f-b18b-c20b1c516af9
+Muudan andmed arusaadavateks ülevaadeteks ja praktilisteks lahendusteks. GitHubist leiad minu andmeanalüüsi projektid, dashboardid ning SQL-i ja Pythoni lahendused.
 
-## Kokkuvõte
+## 🛠️ Oskused ja tööriistad
 
-**Suurim üllatus:**  
-GitHubi struktuuri ja Supabase ühendamine oli alguses keerulisem kui oodatud.
+- **Programmeerimine:** Python (Pandas, Plotly)
+- **Andmebaasid:** PostgreSQL, Supabase
+- **Andmeanalüüs:** SQL
+- **Visualiseerimine:** Power BI, Streamlit
+- **Versioonihaldus:** Git, GitHub
 
-**Soovitus tulevikuks:**  
-Alustada kohe õige folder struktuuriga, et vältida topelt kaustu.
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
+![Power BI](https://img.shields.io/badge/-Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
 
-**Puuduvad andmed:**  
-hetkel pole.
+## 🚀 Projektid
 
-- ## Meeskonna link
-https://github.com/ele1sepp-gif/urbanstyle-marketing
- 
-### Week 1: SQL Põhitõed
-SQL algsed käsud: SELECT, FROM, WHERE, ORDER BY
- 
-### Week 2: SQL Andmete Puhastamine
-Andmete puhastus: Võtmesõna- KONTROLLI 3 korda. Tee test tabelid, ennem muutusi ei tee, kui test tabelite peal on näha, et käsklused toimivad TÄPSELT nii nagu need peavad. Alles siis vii läbi muudatused ja kõige viimasena originaaltabelis.
+📁 **DACA Portfolio**  
+https://github.com/ele1sepp-gif/daca-portfolio
 
-### Week 3: SQL JOIN
-Tabelite ühendus: See tundub mulle hetkel üks vajalikumaid SQL koode, millega saab teha juba päris analüüsi ning näha tõeliseid tulemusi. Tundsin ennast neid tehes juba, et otsin vajalikke andmeid, mis firma tulevikku abistaks. 
+Siit leiad minu praktilised projektid SQL-i, Pythoni, Power BI ja andmeanalüüsi valdkonnast.
 
-## Oskused
- 
-- **SQL:** PostgreSQL, Supabase
-- **Python:** pandas, plotly 
-- **Visualiseerimine:** Power BI / Streamlit (tulemas...)
-- **Tööriistad:** Git, GitHub, VS Code
- 
-## Kontakt
- 
-- **GitHub:** https://github.com/ele1sepp-gif
-- **Email:** ele1sepp@gmail.com
+## 🌱 Hetkel
+
+- Arendan uusi andmeanalüüsi projekte.
+- Täiendan oma oskusi SQL-is, Pythonis ja Power BI-s.
+- Õpin pidevalt uusi tööriistu ja parimaid praktikaid.
+
+## 📫 Kontakt
+
+📧 **Email:** ele1sepp@gmail.com
+
+💻 **GitHub:** https://github.com/ele1sepp-gif
+
+💼 LinkedIn: [linkedin.com/in/elesepp](https://www.linkedin.com/in/elesepp)
+
+
+# Hi there! 👋 I'm Ele
+
+## 📊 Data Analyst | SQL | Python | Power BI | PostgreSQL
+
+I turn data into meaningful insights and practical solutions. Here you'll find my data analytics projects, dashboards, and SQL/Python solutions that showcase my skills and continuous learning.
+
+## 🛠️ Skills & Tools
+
+- **Programming:** Python (Pandas, Plotly)
+- **Databases:** PostgreSQL, Supabase
+- **Data Analysis:** SQL
+- **Data Visualization:** Power BI, Streamlit
+- **Version Control:** Git, GitHub
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
+![Power BI](https://img.shields.io/badge/-Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
+
+## 🚀 Projects
+
+📁 **DACA Portfolio**  
+https://github.com/ele1sepp-gif/daca-portfolio
+
+This repository contains my hands-on projects in SQL, Python, Power BI, and data analytics.
+
+## 🌱 Currently
+
+- Building new data analytics projects.
+- Expanding my skills in SQL, Python, and Power BI.
+- Continuously learning new tools and best practices.
+
+## 📫 Contact
+
+📧 **Email:** ele1sepp@gmail.com
+
+💻 **GitHub:** https://github.com/ele1sepp-gif
+
+💼 LinkedIn: [linkedin.com/in/elesepp](https://www.linkedin.com/in/elesepp)
+
