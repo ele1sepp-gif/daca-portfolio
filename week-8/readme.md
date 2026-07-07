@@ -1,57 +1,160 @@
-# Nädal 8: Python APIs — Automatiseeritud andmepipeline
+# Nädal 8 – Automatiseeritud andmepipeline Pythoniga
 
-## Minu roll
-Tegin kõik rollid (API Query, Data Processing, Visualization + Saving, Automation).
+## Ülevaade
 
----
+Selles projektis loodi automatiseeritud andmepipeline, mille eesmärk oli muuta UrbanStyle ettevõtte andmete töötlemine korduvkasutatavaks ja efektiivsemaks.
 
-## Meeskonna töö ülevaade
-Ehitati end-to-end automatiseeritud andmepipeline UrbanStyle OÜ andmete töötlemiseks.
+Pipeline ühendab kogu analüüsiprotsessi üheks töövooguks:
 
-Pipeline koosneb järgmistest etappidest:
-- Andmete pärimine Supabase API-st
-- Andmete puhastamine ja transformeerimine pandas abil
-- KPI-de ja nädalaste koondnäitajate arvutamine
-- Visualiseerimine Plotly abil
-- Tulemuste salvestamine CSV ja HTML failidena
-- Kogu protsessi automatiseerimine ühe skriptina (pipeline.py)
+- andmete pärimine API kaudu;
+- andmete puhastamine ja töötlemine;
+- KPI-de arvutamine;
+- visualiseerimine;
+- tulemuste eksport.
+
+Eesmärk oli vähendada käsitsi tehtavat tööd ning luua süsteem, mida saab regulaarselt uuesti kasutada.
 
 ---
 
-## Peamised komponendid
+# Äriprobleem
 
-### API Query (data_fetcher.py)
-- Pärib müügi-, kliendi- ja tooteandmed Supabase API-st
-- Kasutab kuupäevafiltreid ja error handlingut
-- Tagastab DataFrame’id
+Analüüsiprojektides kulub palju aega korduvatele tegevustele:
 
-### Data Processing (transform.py)
-- Puhastab andmed (duplikaadid, NULL-id, kuupäevad)
-- Arvutab nädalased koondnäitajad
-- Loob KPI-d (tulu, kliendid, keskmine tellimus)
-- Liidab andmestikud customer_id alusel
+- andmete laadimine;
+- puhastamine;
+- mõõdikute arvutamine;
+- raportite uuendamine.
 
-### Visualization + Saving (visualize_export.py)
-- Loob nädalase tulu line chart’i (Plotly)
-- Kuvab KPI summary dashboardi
-- Ekspordib tulemused CSV ja HTML failidena
+Käsitsi tehtav töö suurendab vigade tekkimise võimalust ning muudab analüüside värskendamise aeglasemaks.
 
-### Automation (pipeline.py)
-- Ühendab kõik moodulid üheks pipeline’iks
-- Käivitab etapid järjekorras: fetch → transform → visualize → export
-- Kasutab loggingut ja try/except veakäsitlust
-- Võimaldab kogu protsessi käivitada ühe käsuga
+Selle lahendamiseks loodi automatiseeritud pipeline, mis viib andmed algallikast valmis analüüsitulemusteni.
 
 ---
 
-## Peamised leiud
-- Automatiseeritud pipeline vähendab käsitsi töö vajadust ja säästab märkimisväärselt aega (u 4h → ~minutid)
-- Andmete kvaliteet paraneb tänu struktureeritud puhastamis- ja valideerimisprotsessile
-- Nädalased KPI-d ja trendid on nüüd kiiresti visualiseeritavad
-- Süsteem on laiendatav (nt uued andmeallikad või automaatsed alertid)
+# Pipeline ülesehitus
+
+Lahendus koosneb neljast põhikomponendist.
+
+## 1. Data Fetching (`data_fetcher.py`)
+
+Vastutab andmete hankimise eest.
+
+Funktsioonid:
+
+- pärib müügi-, kliendi- ja tooteandmeid Supabase API kaudu;
+- kasutab kuupäevafiltreid;
+- tagastab andmed Pandase DataFrame kujul;
+- sisaldab veakäsitlust API probleemide jaoks.
 
 ---
 
-## AI kasutamine
-Kasutasin AI-d koodi struktuuri ja funktsioonide loogika täpsustamiseks ning Supabase API ja pandas pipeline’i ühendamise paremini mõistmiseks.
-AI aitas eriti error handlingu ja pipeline’i arhitektuuri ülesehituse puhul.
+## 2. Data Processing (`transform.py`)
+
+Vastutab andmete ettevalmistamise eest.
+
+Tegevused:
+
+- duplikaatide eemaldamine;
+- puuduvate väärtuste kontroll;
+- kuupäevade töötlemine;
+- tabelite ühendamine;
+- KPI-de arvutamine.
+
+Loodud mõõdikud:
+
+- kogutulu;
+- klientide arv;
+- keskmine tellimuse väärtus;
+- nädalased müügitrendid.
+
+---
+
+## 3. Visualization & Export (`visualize_export.py`)
+
+Vastutab tulemuste esitamise eest.
+
+Loodud väljundid:
+
+- nädalase müügitulu trendi visualiseering;
+- KPI kokkuvõte;
+- CSV eksport;
+- HTML raport.
+
+---
+
+## 4. Automation (`pipeline.py`)
+
+Ühendab kõik etapid üheks automaatseks töövooguks.
+
+Protsess:
+
+1. Fetch  
+2. Transform  
+3. Visualize  
+4. Export  
+
+Kogu analüüsi saab käivitada ühe skriptiga.
+
+Lisaks kasutati:
+
+- loggingut protsessi jälgimiseks;
+- try/except lahendusi vigade käsitlemiseks.
+
+---
+
+# Peamised tulemused
+
+Automatiseeritud pipeline andis järgmised eelised:
+
+## Efektiivsus
+
+- Käsitsi tehtav andmete ettevalmistus vähenes märkimisväärselt.
+- Varasem mitmetunnine töö muutus minutite pikkuseks protsessiks.
+
+## Andmekvaliteet
+
+- Struktureeritud puhastusprotsess vähendas vigade tekkimise võimalust.
+- Andmete valideerimine toimus iga töötlemisetapi jooksul.
+
+## Korduvkasutatavus
+
+- Pipeline'i saab kasutada uute andmete töötlemiseks ilma kogu protsessi uuesti üles ehitamata.
+- Lahendust saab laiendada uute andmeallikate ja täiendavate mõõdikutega.
+
+---
+
+# Äriline väärtus
+
+Automatiseeritud andmevoog võimaldab ettevõttel:
+
+- saada kiiremini värsket infot;
+- jälgida regulaarseid KPI-sid;
+- vähendada käsitsi tehtavat raportitööd;
+- teha otsuseid ajakohaste andmete põhjal.
+
+---
+
+# Kasutatud tehnoloogiad
+
+- Python
+- Pandas
+- Plotly
+- Supabase API
+- Jupyter Notebook
+- GitHub
+
+---
+
+# AI kasutamine
+
+Kasutasin ChatGPT abi pipeline'i arhitektuuri planeerimisel, funktsioonide loogika kontrollimisel ning API, Pandase ja veakäsitluse ühendamisel.
+
+AI aitas muuta koodi struktuuri selgemaks ja parandada lahenduse töökindlust.
+
+---
+
+# Analüüsi põhisõnum
+
+Hea analüüs ei seisne ainult tulemuste leidmises, vaid ka selles, kuidas muuta andmetöötlus usaldusväärseks, korratavaks ja efektiivseks protsessiks.
+
+Automatiseeritud pipeline võimaldab analüütikul keskenduda rohkem tulemuste tõlgendamisele ja äriliste otsuste toetamisele, vähendades samal ajal käsitsi tehtavat tööd.
