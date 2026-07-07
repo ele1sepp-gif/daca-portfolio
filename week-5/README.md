@@ -1,70 +1,125 @@
-# Week 5 – Dashboardi visualiseerimine
+# Nädal 5 – Power BI dashboard ja turundusanalüüs
 
 ## Ülevaade
 
-Viiendal nädalal keskendusime andmete visualiseerimisele ning õppisime looma erinevatele huvigruppidele (stakeholderitele) sobivaid dashboard'e. Projekti eesmärk oli esitada samad andmed erinevast vaatenurgast, et toetada ettevõtte juhtkonna otsuseid.
+Selles projektis loodi Power BI dashboard, mille eesmärk oli anda turundusjuhile kiire ülevaade müügikanalite tulemuslikkusest, kliendibaasi arengust ja peamistest ärinäitajatest.
 
-Minu ülesandeks oli koostada turundusjuhi (Anna) dashboard, mis annaks ülevaate müügikanalite efektiivsusest ja kliendibaasi arengust.
+Analüüsi eesmärk oli mõista:
 
----
-
-## Õpieesmärgid
-
-Selle projekti käigus harjutasin:
-
-* sobivate diagrammitüüpide valimist;
-* KPI-de ja dashboard'i ülesehituse koostamist;
-* müügikanalite võrdlemist;
-* kliendikasvu visualiseerimist ajas;
-* andmete tõlgendamist turunduse vaatenurgast;
-* selgete äriliste soovituste koostamist.
+- millised müügikanalid toovad enim käivet;
+- kuidas kliendibaas ajas muutub;
+- millised kanalid on kõige efektiivsemad klientide kaasamisel;
+- millistele valdkondadele võiks turundustegevustes rohkem tähelepanu pöörata.
 
 ---
 
-## Minu panus
+# Äriprobleem
 
-Minu roll meeskonnas oli **Roll B – Marketing Dashboard**.
+Turundusotsuste tegemiseks on oluline mõista, millised kanalid loovad ettevõttele kõige rohkem väärtust.
 
-Koostasin dashboard'i, mis keskendus:
-
-* müügitulu võrdlemisele müügikanalite lõikes;
-* kliendibaasi kasvule ajas;
-* kanalite efektiivsusele klientide hankimisel;
-* peamiste KPI-de esitamisele.
-
-Dashboard valmis Power BI-s ning eesmärk oli anda turundusjuhile kiire ülevaade sellest, millised kanalid toovad kõige rohkem kliente ja müügitulu.
+Toorandmed üksi ei anna kiiret ülevaadet, mistõttu oli vajalik muuta andmed visuaalseks dashboardiks, mis võimaldab juhtidel kiiresti märgata trende ja erinevusi müügikanalite vahel.
 
 ---
 
-## Peamised leiud
+# Minu panus
 
-* Füüsiline pood teenis ligikaudu kaks korda rohkem müügitulu kui online-kanal ning oli ettevõtte peamine tulumootor.
-* Kliendibaas kasvas stabiilselt kuni 2024. aastani, kuid hilisem langus oli tõenäoliselt seotud puudulike andmetega ning vajab ettevaatlikku tõlgendamist.
-* Pood tõi rohkem kliente kui online-kanal, kuid online mängib olulist toetavat rolli ettevõtte müügis.
-* Kanalite efektiivsuses esines selgeid erinevusi, mis viitab võimalustele turundustegevuste optimeerimiseks.
+Minu roll projektis oli:
 
----
+**Marketing Dashboard – turundusjuhi vaade**
 
-## Soovitused
+Koostasin Power BI dashboardi, mis keskendus:
 
-Analüüsi põhjal soovitasin jätkata investeerimist kõige tulemuslikumasse müügikanalisse ning samal ajal arendada online-kanalit, et suurendada selle osakaalu kogumüügis. Samuti tuleks regulaarselt jälgida kliendibaasi muutusi ning hinnata turunduskampaaniate mõju erinevates kanalites.
+- müügitulu võrdlemisele müügikanalite lõikes;
+- kliendibaasi kasvule ajas;
+- kanalite efektiivsusele;
+- peamiste KPI-de kuvamisele.
 
----
-
-## Meeskonna peamised järeldused
-
-Meeskonna analüüsi põhjal selgus, et müügitrend hakkas langema pärast 2024. aasta lõppu. Müük kategooriate vahel oli üllatavalt ühtlane, hoolimata toodete erinevast hinnatasemest ja sortimendi suurusest. VIP-kliente oli arvuliselt kõige vähem, kuid nende keskmine käive kliendi kohta oli kõige suurem. Turunduskanalitest osutus kõige edukamaks Google.
-
-Soovitasime vähendada aeglaselt liikuvat laovaru, keskenduda efektiivsematele toodetele, kasvatada regulaarsete klientide lojaalsust ning hoida VIP-kliente. Turundusinvesteeringud võiks suunata eelkõige Google'i, Facebooki ja Direct-kanalisse.
+Dashboard oli loodud eesmärgiga anda turundusjuhile kiire ja arusaadav ülevaade ettevõtte olukorrast.
 
 ---
 
-## AI kasutamine
+# Kasutatud analüüsimeetodid
 
-Kasutasin ChatGPT abi dashboard'i äritõlgenduste sõnastamisel ning visualiseerimiste analüüsimisel. AI aitas muuta järeldused selgemaks ning koostada konkreetsemad ärilised soovitused.
+Dashboardi loomisel kasutasin:
+
+- KPI-kaarte peamiste näitajate kuvamiseks;
+- ajatrendi visualiseerimist;
+- kanalite võrdlust diagrammide abil;
+- filtrite kasutamist detailsemaks analüüsiks;
+- andmete tõlgendamist ärilisest vaatenurgast.
 
 ---
 
-## Olulisemad õppetunnid
+# Peamised leiud
 
-See nädal õpetas mulle, kui oluline on valida õige visualiseerimine vastavalt sihtrühma vajadustele. Lisaks sain paremini aru, kuidas esitada andmeid nii, et neist oleks võimalik kiiresti teha ärilisi järeldusi ning toetada juhtimisotsuseid.
+Analüüsi põhjal selgus:
+
+### Müügikanalite tulemuslikkus
+
+- Füüsiline pood genereeris ligikaudu kaks korda rohkem müügitulu kui online-kanal.
+- Füüsiline kauplus oli ettevõtte peamine müügitulu allikas.
+- Online-kanalil oli siiski oluline toetav roll ning kasvupotentsiaal.
+
+### Kliendibaasi areng
+
+- Kliendibaas kasvas stabiilselt kuni 2024. aastani.
+- Hilisem langus vajab ettevaatlikku tõlgendamist, kuna seda võis mõjutada puudulik andmestik.
+
+### Kanalite efektiivsus
+
+- Erinevate müügikanalite vahel esines selgeid erinevusi.
+- Tulemused viitasid võimalusele optimeerida turundustegevusi vastavalt kanalite tugevustele.
+
+---
+
+# Ärilised soovitused
+
+Analüüsi põhjal soovitasin:
+
+- jätkata investeerimist kõige tugevamasse müügikanalisse;
+- arendada online-kanalit, et suurendada selle osakaalu kogumüügis;
+- jälgida regulaarselt kliendibaasi muutusi;
+- hinnata kampaaniate mõju erinevate kanalite lõikes.
+
+Dashboard aitab turundusotsuseid teha andmetele tuginedes, mitte ainult hinnangute põhjal.
+
+---
+
+# Meeskonna analüüsi kokkuvõte
+
+Meeskonna ühine analüüs näitas:
+
+- müügitrend hakkas pärast 2024. aasta lõppu langema;
+- kategooriate müügimahud olid üllatavalt sarnased;
+- VIP-kliente oli vähem, kuid nende keskmine väärtus oli kõige suurem;
+- Google oli kõige efektiivsem turunduskanal.
+
+Soovitustena tõime välja:
+
+- aeglaselt liikuvate toodete optimeerimise;
+- lojaalsusprogrammi arendamise;
+- VIP-klientide hoidmise;
+- turunduseelarve suunamise tugevamatesse kanalitesse.
+
+---
+
+# Kasutatud tööriistad
+
+- Power BI
+- SQL
+- Supabase
+- GitHub
+
+---
+
+# AI kasutamine
+
+AI aitas muuta tehnilised tulemused selgemaks ning siduda need praktiliste turundussoovitustega.
+
+---
+
+# Analüüsi põhisõnum
+
+Hea dashboard ei näita ainult numbreid, vaid aitab ettevõttel mõista, miks tulemused muutuvad ning milliseid tegevusi võiks nende põhjal teha.
+
+Power BI abil saab muuta keerulised andmed selgeks visuaalseks ülevaateks, mis toetab kiiremaid ja paremaid äriotsuseid.
