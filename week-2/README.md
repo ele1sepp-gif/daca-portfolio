@@ -1,83 +1,140 @@
-# Nädal 2 — Andmete puhastamine ja kvaliteedikontroll
+# Week 2 – Kliendiandmete kvaliteedianalüüs ja puhastamine
 
-## Eesmärk
+## Ülevaade
 
-Teise nädala eesmärk oli mõista andmekvaliteedi tähtsust ning rakendada SQL-põhiseid andmete puhastamise tehnikaid.
+Selle analüüsi eesmärk oli hinnata UrbanStyle kliendiandmete kvaliteeti ning tuvastada probleemid, mis võiksid mõjutada edasiste analüüside täpsust.
 
-Peamine fookus oli kliendiandmete analüüsil, vigade tuvastamisel ja andmestiku ettevalmistamisel edasiseks analüüsiks.
-
----
-
-## Minu roll
-
-**Kliendiandmete analüütik**
-
-Nädal 2 jooksul vastutasin kliendiandmete uurimise ja puhastamise eest ning panustasin meeskonna esitlusmaterjalide ja projekti dokumentatsiooni koostamisse.
+Usaldusväärne kliendiinfo on oluline müügi-, turundus- ja kliendikäitumise analüüside jaoks. Enne andmete kasutamist analüüsiti olemasolevat andmestikku, tuvastati ebakõlad ning valmistati andmed ette edasiseks kasutamiseks.
 
 ---
 
-## Teostatud ülesanded
+## Analüüsi eesmärk
 
-### Kliendiandmete puhastamine
+Analüüsi käigus otsiti vastuseid järgmistele küsimustele:
 
-Analüüsisin `customers` tabelit ning tuvastasin andmekvaliteedi probleemid, mis võisid mõjutada edasist analüüsi.
-
-Peamised leiud:
-
-- Klientide arv: 3150
-- Puuduvad e-mailid: 380
-- Duplikaatsed e-mailid: 128
-- Ebajärjekindlad linnanimed (näiteks Tallinn, tallinn, TALLINN)
-
-Tehtud tegevused:
-
-- Tuvastasin puuduvad väärtused ja ebakõlad.
-- Standardiseerisin linnanimed ühtseks formaadiks.
-- Kontrollisin duplikaatseid kirjeid.
-- Valideerisin muudatusi enne lõplikku rakendamist.
+* Kas kliendiandmetes esineb puuduvaid väärtusi?
+* Kas andmetes leidub duplikaate?
+* Kas kontaktandmed on ühtses formaadis?
+* Kas linnade ja teiste tekstiväljade kirjapilt on standardiseeritud?
+* Millised andmekvaliteedi probleemid võivad mõjutada ärianalüüse?
 
 ---
 
-## Andmete puhastamise protsess
+## Kasutatud tehnoloogiad
 
-Kõik muudatused testisin esmalt eraldi testtabelites.
-
-Töövoog:
-
-1. Analüüsisin olemasolevat andmestruktuuri.
-2. Testisin SQL muudatusi eraldi tabelis.
-3. Kontrollisin tulemusi.
-4. Rakendasin kinnitatud muudatused lõplikus andmestikus.
-
-Selline lähenemine aitas vältida juhuslikku andmekadu ning tagas usaldusväärsed muudatused.
+* PostgreSQL
+* SQL
+* Supabase
+* GitHub
 
 ---
 
-## Arendatud SQL oskused
+## Andmed
 
-- Keerukam SQL süntaks
-- UPDATE päringud
-- Andmete valideerimine
-- Duplikaatide leidmine
-- Puuduvate väärtuste käsitlemine
-- Andmete standardiseerimine
+Analüüs põhines UrbanStyle andmebaasi `customers` tabelil.
 
----
+Analüüsitud andmed sisaldasid:
 
-## Panus meeskonda
-
-Nädala jooksul:
-
-- Koostasin grupi esitlusslaidid.
-- Täiendasin projekti portfooliot.
-- Dokumenteerisin SQL loogikat ja puhastamise samme.
+* kliendi identifikaatoreid;
+* nimesid;
+* e-posti aadresse;
+* telefoninumbreid;
+* linnasid.
 
 ---
 
-## Olulisem õppetund
+## Analüüsi protsess
 
-Selle nädala peamine õppetund oli, et andmete puhastamine nõuab analüütilist mõtlemist ja ettevaatlikke otsuseid.
+Andmekvaliteedi kontroll viidi läbi järgmiste sammudena:
 
-Andmeanalüütiku töö ei ole ainult SQL päringute kirjutamine, vaid andmete tähenduse mõistmine enne nende muutmist.
+### 1. Andmestruktuuri ja mahtu kontroll
 
-Koostasin endale SQL konspekti, kus dokumenteerisin päringute loogikat ja kasutatud tehnikaid tulevaste analüüside lihtsustamiseks.
+Kontrolliti kliendikirjete koguarvu ning hinnati olemasoleva andmestiku suurust.
+
+Tulemuseks:
+
+* Kliente kokku: **3150**
+
+---
+
+### 2. Puuduvate väärtuste tuvastamine
+
+Kontrolliti puuduvate väärtuste esinemist:
+
+* e-mailides;
+* nimedes;
+* telefoninumbrite väljal.
+
+Tulemused:
+
+* Puuduvaid e-maile: **380**
+* Kõik kliendinimed olid olemas.
+* Telefoninumbrid olid olemas ning vastasid kasutatud kontrollkriteeriumitele.
+
+---
+
+### 3. Duplikaatide kontroll
+
+Analüüsiti e-mailide korduvust, et tuvastada võimalikud topeltkirjed.
+
+Tulemused:
+
+* Leiti **128 korduvat e-maili**.
+* Kõik korduvad väärtused ei tähendanud automaatselt duplikaatseid kliente, mistõttu kontrolliti kirjeid täiendavalt enne muudatuste tegemist.
+
+---
+
+### 4. Andmete standardiseerimine
+
+Viidi läbi andmete korrastamine:
+
+* linnanimede ühtlustamine;
+* e-mailide muutmine väiketähtedeks;
+* tekstiväljade korrastamine;
+* võimalike puuduvate nimede käsitlemine.
+
+Kõik muudatused testiti esmalt eraldi testtabelites enne lõplike muudatuste rakendamist.
+
+---
+
+## Peamised tulemused
+
+Analüüsi käigus tuvastati järgmised andmekvaliteedi probleemid:
+
+| Probleem                       | Tulemus |
+| ------------------------------ | ------- |
+| Kliendikirjete arv             | 3150    |
+| Puuduvad e-mailid              | 380     |
+| Korduvad e-mailid              | 128     |
+| Linnanimede erinevad formaadid | Esines  |
+
+Oluline tähelepanek:
+
+Kuigi osa andmeid vajasid puhastamist, olid mitmed väljad juba kvaliteetsed. Näiteks olid klientide nimed ja telefoninumbrid täielikult täidetud.
+
+---
+
+## Ärialased järeldused ja soovitused
+
+Kliendiandmete kvaliteet mõjutab otseselt ettevõtte võimet teha täpseid analüüse ja suunata turundustegevusi.
+
+Peamised soovitused:
+
+* parandada puuduvate e-mailide kogumist, kuna need mõjutavad kliendisuhtlust;
+* rakendada regulaarseid andmekvaliteedi kontrolle;
+* säilitada standardiseeritud andmevormingud uute kirjete lisamisel;
+* kasutada testtabeleid enne suuremate andmemuudatuste rakendamist.
+
+Korrastatud kliendiandmed loovad usaldusväärse aluse näiteks kliendisegmentatsiooni, kampaaniate ja ostukäitumise analüüside jaoks.
+
+---
+
+## Failid
+
+* `week2_customers_cleaning.sql`
+
+---
+
+## Analüüsi peamine väärtus
+
+Selle analüüsi tulemusena valmis kvaliteetsem kliendiandmestik, mida saab kasutada edasistes müügi-, turundus- ja kliendikäitumise analüüsides.
