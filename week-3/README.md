@@ -1,45 +1,140 @@
-# Week 3 – SQL JOIN-id
+# Week 3 – Müügi- ja kliendianalüüs SQL JOIN-ide abil
 
 ## Ülevaade
 
-Kolmandal nädalal keskendusime SQL **JOIN**-lausetele ning õppisime ühendama andmeid mitmest omavahel seotud tabelist. Töö toimus UrbanStyle näidisandmebaasi põhjal, kus lahendasime reaalseid äriprobleeme, kasutades klientide, müügi, toodete ja laoseisu andmeid.
+Selle analüüsi eesmärk oli ühendada UrbanStyle erinevad andmetabelid ning luua terviklik ülevaade ettevõtte müügist, klientidest, toodetest ja müügikanalitest.
 
-Selle nädala eesmärk oli mõista, kuidas relatsioonilises andmebaasis erinevaid tabeleid omavahel siduda ning kuidas saadud tulemusi kasutada äriliste otsuste tegemisel.
+Relatsioonilistes andmebaasides paikneb äriliselt oluline info sageli erinevates tabelites. Nende ühendamine võimaldab analüüsida mitte ainult üksikuid andmeid, vaid mõista seoseid klientide, toodete ja müügitulemuste vahel.
 
-## Õpieesmärgid
+---
 
-Selle projekti käigus harjutasin:
+## Analüüsi eesmärk
 
-* INNER JOIN kasutamist
-* LEFT JOIN kasutamist
-* Mitme tabeli ühendamist (Multi-table JOIN)
-* Primaar- ja võõrvõtmete (Primary Key / Foreign Key) kasutamist
-* Andmete koondamist funktsioonidega `COUNT()`, `SUM()` ja `AVG()`
-* Tulemuste grupeerimist (`GROUP BY`) ja järjestamist (`ORDER BY`)
-* SQL päringute tulemuste tõlgendamist ärilisest vaatenurgast
+Analüüsi käigus otsiti vastuseid järgmistele äriküsimustele:
 
-## Minu panus
+* Kes on ettevõtte väärtuslikumad kliendid müügitulu põhjal?
+* Millised linnad toovad kõige rohkem müüki?
+* Kuidas mõjutavad kliendisegmendid ettevõtte tulemusi?
+* Millised müügikanalid on kõige efektiivsemad?
+* Kuidas ühendada erinevatest tabelitest pärinev info ühtseks analüüsiks?
 
-Minu põhiroll meeskonnas oli **Roll A – Müük ja kliendid (INNER JOIN)**.
-
-Selle rolli käigus analüüsisin:
-
-* parimaid kliente kogumüügi põhjal;
-* müüki linnade lõikes;
-* lojaalsustasemete mõju müügitulemustele.
-
-Lisaks koostasin esitluse jaoks ka **Roll D – Müügikanalite analüüsi**, et meie meeskond saaks esitleda kõik nõutud teemad.
-
+---
 
 ## Kasutatud tehnoloogiad
 
 * PostgreSQL
-* Supabase
 * SQL
+* Supabase
 * GitHub
 
-## Olulisemad õppetunnid
+---
 
-See nädal oli minu jaoks üks huvitavamaid, sest tundsin esimest korda, et lahendan päris andmeanalüütiku tööle sarnanevaid ülesandeid. JOIN-laused võimaldasid ühendada erinevates tabelites olevad andmed ning nende põhjal teha sisulisi järeldusi ettevõtte tegevuse kohta.
+## Andmed
 
-Lisaks SQL päringute kirjutamisele sain rohkem harjutada ka tulemuste tõlgendamist ning nende esitlust ärilisest vaatenurgast. See aitas paremini mõista, kuidas andmeanalüüs toetab otsuste tegemist ettevõttes.
+Analüüsis kasutati mitut UrbanStyle andmebaasi tabelit:
+
+* `customers` – kliendiinfo
+* `sales` – müügitehingud
+* `products` – tooteinfo
+* `inventory` – laoseisuinfo
+
+Tabelid ühendati omavahel primaar- ja võõrvõtmete abil.
+
+---
+
+## Analüüsi protsess
+
+Analüüsis kasutati:
+
+### INNER JOIN
+
+Kasutati olemasolevate seoste põhjal andmete ühendamiseks ning müügi ja klientide analüüsimiseks.
+
+Näiteks:
+
+* kliendiinfo ühendamine müügitehingutega;
+* toodete ühendamine müügiandmetega.
+
+---
+
+### LEFT JOIN
+
+Kasutati olukordades, kus oli oluline säilitada kõik põhitegevuse kirjed ning kontrollida seotud andmete olemasolu.
+
+---
+
+### Agregatsioon ja tulemuste tõlgendamine
+
+Analüüsi käigus kasutati:
+
+* `COUNT()`
+* `SUM()`
+* `AVG()`
+* `GROUP BY`
+* `ORDER BY`
+
+Nende abil koostati ülevaated klientide väärtusest, müügist ja kanalite tulemuslikkusest.
+
+---
+
+## Minu panus
+
+Minu põhiroll oli:
+
+**Roll A – Müük ja kliendid (INNER JOIN)**
+
+Analüüsisin:
+
+* suurima kogumüügiga kliente;
+* müügitulemusi linnade lõikes;
+* lojaalsustasemete mõju müügitulemustele.
+
+Lisaks koostasin meeskonna analüüsi jaoks:
+
+**Roll D – Müügikanalite analüüs**
+
+---
+
+## Peamised tulemused
+
+Analüüsi tulemusena loodi ülevaade:
+
+* klientide väärtusest ettevõttele;
+* erinevate piirkondade müügitulemustest;
+* müügikanalite efektiivsusest;
+* kliendisegmentide käitumisest.
+
+JOIN-analüüs võimaldas siduda kliendi-, toote- ja müügiinfo ning muuta üksikud tabelid terviklikuks ärivaateks.
+
+---
+
+## Ärialased järeldused
+
+Analüüsi põhjal sai hinnata:
+
+* millised kliendid toovad ettevõttele enim väärtust;
+* milliste piirkondade müük vajab rohkem tähelepanu;
+* millised kanalid toetavad ettevõtte müügieesmärke.
+
+Selline analüüs annab ettevõttele võimaluse suunata turundustegevusi ja ressursse andmepõhiselt.
+
+---
+
+## Peamised õppetunnid analüüsi vaatenurgast
+
+Erinevate andmetabelite ühendamine on oluline osa praktilisest andmeanalüüsist. Üksik tabel annab piiratud info, kuid ühendatud andmed võimaldavad vastata keerukamatele äriküsimustele.
+
+---
+
+## Failid
+
+Individuaalsed analüüsid:
+
+* `week3_roll_a_myyk_kliendid.sql`
+* `week3[domeen]joins.sql`
+* `week3_nsm_harjutus_roll_b_kadunud_kliendid.sql`
+* `week3_nsm_harjutus_roll_c_tooted_inventuur.sql`
+* `week3_nsmharjutus_roll_d_muugikanalid.sql`
+
+---
+
