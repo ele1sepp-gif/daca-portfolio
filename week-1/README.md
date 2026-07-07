@@ -1,66 +1,93 @@
-# Nädal 1 — SQL põhialused ja andmete uurimine
+# Week 1 – UrbanStyle toodete andmeanalüüs
 
-## Eesmärk
+## Ülevaade
 
-Esimese nädala eesmärk oli tutvuda UrbanStyle andmebaasi struktuuriga ning uurida olemasolevaid andmestikke SQL päringute abil.
+Selle analüüsi eesmärk oli uurida UrbanStyle ettevõtte tooteandmeid ning luua ülevaade olemasolevast tooteportfellist enne põhjalikemate analüüside tegemist.
 
-Peamine fookus oli toodete andmestruktuuri mõistmisel ning tulevase analüüsi jaoks vajaliku info kaardistamisel.
-
----
-
-## Minu roll
-
-**Tooteandmete uurija (Product Data Explorer)**
-
-Nädal 1 jooksul vastutasin toodete andmestiku uurimise eest ning panustasin meeskonna andmemaastiku (Data Landscape) koostamisse.
+Andmete esmase uurimise abil selgitati välja andmestiku struktuur, toodete jaotus ning info kvaliteet. See etapp oli vajalik, et mõista, milliseid andmeid saab kasutada edasiste ärianalüüside alusena.
 
 ---
 
-## Teostatud ülesanded
+## Analüüsi eesmärk
 
-### Tooteandmete uurimine
+Analüüsi käigus otsiti vastuseid järgmistele küsimustele:
 
-Kasutasin SQL päringuid `products` tabeli struktuuri ja sisu analüüsimiseks.
-
-Peamised tulemused:
-
-- Toodete koguarv: 362 kirjet
-- Andmestikus olid järgmised tootekategooriad:
-  - Jalanõud
-  - Laste riided
-  - Aksessuaarid
-  - Naiste riided
-  - Meeste riided
-
-Andmekvaliteedi tähelepanekud:
-
-- Kõikidel toodetel olid hinnad olemas.
-- Andmestiku struktuur sobis edasiseks analüüsiks.
-- Esmasel kontrollimisel suuri andmekvaliteedi probleeme ei tuvastatud.
+* Milline on ettevõtte tootevaliku struktuur?
+* Kui palju erinevaid tooteid andmestikus on?
+* Millised tootekategooriad on esindatud?
+* Kas olemasolevad andmed on piisava kvaliteediga edasiseks analüüsiks?
 
 ---
 
-## Arendatud SQL oskused
+## Kasutatud tehnoloogiad
 
-- SELECT päringud
-- Andmete filtreerimine
-- Kirjete loendamine
-- Tabelite struktuuri mõistmine
-- Andmete esmane uurimine (data exploration)
+* PostgreSQL
+* SQL
+* Supabase
+* GitHub
+
+---
+
+## Andmed
+
+Analüüs põhines UrbanStyle andmebaasi `products` tabelil.
+
+Analüüsitud andmed sisaldasid:
+
+* toodete identifikaatoreid
+* tootenimesid
+* kategooriaid
+* hinnainfot
 
 ---
 
-## Olulisem õppetund
+## Analüüsi protsess
 
-Selle etapi üks olulisemaid õppetunde oli äriküsimuse ja andmebaasi struktuuri kontrollimise tähtsus enne päringute kirjutamist.
+Tooteandmete uurimiseks kasutati SQL päringuid, millega:
 
-SQL päring võib tehniliselt edukalt töötada, kuid anda vale vastuse, kui analüüsitav küsimus ja andmetabeli tegelik ülesehitus ei ole omavahel kooskõlas.
+* kontrolliti tabeli struktuuri;
+* loendati toodete koguarv;
+* uuriti erinevaid tootekategooriaid;
+* hinnati andmete kvaliteeti;
+* kontrolliti analüüsi jaoks vajaliku info olemasolu.
 
 ---
+
+## Peamised tulemused
+
+Analüüsi tulemusena selgus:
+
+* Andmestikus oli kokku **362 toodet**.
+* Tooted jagunesid järgmiste kategooriate vahel:
+
+  * Jalanõud
+  * Laste riided
+  * Aksessuaarid
+  * Naiste riided
+  * Meeste riided
+
+Andmekvaliteedi kontroll näitas:
+
+* Kõikidel toodetel olid hinnad olemas.
+* Tootekategooriad olid kasutatavad edasiseks analüüsiks.
+* Esmase kontrolli käigus suuri andmekvaliteedi probleeme ei tuvastatud.
+
+---
+
+## Ärialased järeldused
+
+Tooteandmete esmane analüüs kinnitas, et olemasolev andmestik sobib edasiseks ärianalüüsiks.
+
+Korrektselt struktureeritud tooteinfo loob aluse järgmisteks analüüsideks, näiteks:
+
+* müügitulemuste võrdlemiseks kategooriate lõikes;
+* populaarsemate toodete leidmiseks;
+* hinnastamise ja inventuuri analüüsimiseks.
+
+---
+
 ## Failid
 [Week1sql.sql](https://github.com/user-attachments/files/27438429/Week1sql.sql)
 
-## Meeskonna töö
-https://docs.google.com/presentation/d/1aXzLf3nE0F-znkdW4CAMFus0Ee_wwbt3CyUBsSquF4Q/edit?slide=id.p#slide=id.p
 
 
