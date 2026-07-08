@@ -1,81 +1,112 @@
-UrbanStyle Marketing Analytics Project
-Project Overview
+# UrbanStyle turundusanalüüsi projekt
 
-UrbanStyle.ltd on moeettevõte, mille eesmärk oli kasutada olemasolevaid müügi-, kliendi- ja tooteandmeid paremate äriotsuste tegemiseks.
+## Projekti ülevaade
 
-Projekti eesmärk oli ehitada andmeanalüüsi pipeline, mis hõlmab:
+**UrbanStyle Ltd** on moeettevõte, mille eesmärk oli kasutada olemasolevaid müügi-, kliendi- ja tooteandmeid teadlikumate äriotsuste tegemiseks.
 
-andmete kvaliteedikontrolli;
-andmete puhastamist;
-SQL-põhist analüüsi;
-Pythoniga uurivat analüüsi;
-dashboardide loomist;
-äriliste soovituste koostamist.
+Projekti käigus loodi terviklik andmeanalüüsi protsess, mis hõlmas:
 
-Projekt sisaldas kolme põhAndmestikku:
+* andmete kvaliteedi hindamist;
+* andmete puhastamist ja valideerimist;
+* SQL-põhist andmeanalüüsi;
+* uurivat andmeanalüüsi (EDA) Pythoni abil;
+* interaktiivsete dashboardide loomist;
+* äriliste järelduste ja soovituste koostamist.
 
-Sales
-15,234 rida
-12 veergu
-negatiivsed tehinguväärtused
-1,487 puuduvat kliendiinfot sisaldavat rida
-duplikaadid
-Customers
-3,150 klienti
-9 veergu
-380 puuduvat e-maili
-128 duplikaatset e-maili
-linnanimede erinevad vormingud:
-Tallinn
-tallinn
-TALLINN
-Products
-362 toodet
-9 veergu
+---
 
-Tegevused:
+# Kasutatud andmestikud
 
-vähesed kvaliteediprobleemid
-kategooriate korrastamine
-Andmete puhastamine
+## Müügiandmed (Sales)
 
-Enne puhastamist:
-Sales: 15,234 rida
+* **15 234** kirjet
+* **12** veergu
+* negatiivsed tehinguväärtused
+* **1 487** kirjet puuduvate kliendiandmetega
+* duplikaatkirjed
 
-Pärast puhastamist:
-Sales: 10,118 analüüsiks sobivat tehingut
+## Kliendiandmed (Customers)
 
+* **3 150** klienti
+* **9** veergu
+* **380** puuduvat e-posti aadressi
+* **128** duplikaatset e-posti aadressi
+* ebaühtlased linnanimede kirjapildid (näiteks *Tallinn*, *tallinn*, *TALLINN*)
 
-Tehtud tegevused:
+## Tooted (Products)
 
-✓ eemaldatud duplikaadid
-✓ standardiseeritud linnanimed
-✓ kontrollitud puuduvad väärtused
-✓ valideeritud andmetüübid
-✓ kontrollitud ebaloogilised väärtused
+* **362** toodet
+* **9** veergu
+* üksikud andmekvaliteedi probleemid
+* kategooriate korrastamise vajadus
 
-Analysis Performed
-Customer Analysis
-kliendikäitumise analüüs;
-VIP segmentide leidmine;
-ostumustrite analüüs;
-lojaalsete klientide tuvastamine.
-Sales Analysis
-müügitulemused periooditi;
-kanalite võrdlus;
-toodete tulemuslikkus;
-kategooriate analüüs.
-Business Questions
+---
 
+# Andmete puhastamine
 
-#VIP kliendisegment moodustas olulise osa kogukäibest.
-Lojaalsete klientide hoidmine on suure mõjuga.
-Andmekvaliteedi parandamine on oluline enne automatiseeritud raportite loomist.
-Linnapõhised erinevused mõjutavad müügitulemusi.
+### Enne puhastamist
 
-#Soovitused:
-parandada andmesisestuse reegleid;
-muuta e-mail kohustuslikuks kliendi loomisel;
-rakendada win-back kampaaniaid kadunud klientidele;
-keskenduda vähem müüdud kategooriate arendamisele;
-kasutada dashboarde pidevaks KPI jälgimiseks.
+* **Sales:** 15 234 kirjet
+
+### Pärast puhastamist
+
+* **Sales:** 10 118 analüüsiks sobivat tehingut
+
+### Läbiviidud tegevused
+
+* eemaldati duplikaatkirjed;
+* standardiseeriti linnanimede kirjapilt;
+* kontrolliti ja käsitleti puuduvaid väärtusi;
+* valideeriti andmetüübid;
+* tuvastati ja eemaldati ebaloogilised väärtused.
+
+---
+
+# Teostatud analüüsid
+
+## Kliendianalüüs
+
+* kliendikäitumise analüüs;
+* VIP-klientide tuvastamine;
+* ostumustrite analüüs;
+* lojaalsete klientide leidmine.
+
+## Müügianalüüs
+
+* müügitulemuste analüüs ajaperioodide lõikes;
+* müügikanalite võrdlus;
+* toodete tulemuslikkuse hindamine;
+* tootekategooriate analüüs.
+
+---
+
+# Peamised järeldused
+
+* VIP-kliendid moodustavad märkimisväärse osa ettevõtte kogukäibest.
+* Lojaalsete klientide hoidmine mõjutab oluliselt ettevõtte müügitulemusi.
+* Enne automatiseeritud raportite loomist tuleb parandada andmete kvaliteeti.
+* Linnapõhised erinevused mõjutavad müügitulemusi ning neid tuleks otsuste tegemisel arvesse võtta.
+
+---
+
+# Soovitused
+
+* täiustada andmesisestuse reegleid;
+* muuta e-posti aadress kliendi loomisel kohustuslikuks väljaks;
+* rakendada win-back-kampaaniaid passiivsete või kadunud klientide tagasivõitmiseks;
+* arendada vähem müüdud tootekategooriaid;
+* kasutada dashboarde ettevõtte peamiste KPI-de pidevaks jälgimiseks.
+
+---
+
+# Kasutatud tehnoloogiad
+
+* SQL
+* Python (Pandas, NumPy, Matplotlib, Seaborn)
+* Jupyter Notebook
+* Power BI
+* Git & GitHub
+
+# Portfoolio koduleht
+
+https://ele1sepp-gif.github.io/daca-portfolio
