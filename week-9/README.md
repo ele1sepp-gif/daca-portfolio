@@ -1,92 +1,210 @@
-* ALAÜLESANDE KAART A — Palkamisjuhi vaade (HR/Hiring Manager)
-* 
-* Roll: A – Palkamisjuht (HR / Hiring Manager)
-* 
-* Ülesanne:
-* Hindasin UrbanStyle’i andmeanalüütiku portfooliot CV ja LinkedIn vaatenurgast. Eesmärk oli aru saada, kas GitHubi projektid toetavad CV-d ning kas kandidaat oleks tööandja vaates sobiv.
-* 
-* CV perspektiiv:
-* CV ei anna täielikult edasi seda rolli, mida kandidaat otsib. Puudu jääb selgem siht ja rohkem ärilise väärtuse esile toomine.
-* Samas on näha, et tehniline tase on olemas ning projektid näitavad päris andmeanalüüsi oskusi.
-* 
-* LinkedIn perspektiiv:
-* LinkedIn on üldiselt okei, aga vajaks täpsemat sihtimist. Praegu ei ole väga hästi aru saada, mis rolli kandidaat otsib.
-* Soovitaksin panna tugevamad projektid Featured sektsiooni ja lisada rohkem tulemuste ja mõju kirjeldusi.
-* 
-* 3 tugevust:
-* 
-* 1. Tugev tehniline baas
-* Kasutab SQL-i, Pythonit ja teisi andmeanalüüsi tööriistu.
-* 
-* 2. Korralik dokumentatsioon
-* README-d annavad üldiselt hea ülevaate projektidest ja sellest, mida tehtud on.
-* 
-* 3. Praktilised projektid
-* Tööd on päris andmepõhised ja mitte lihtsalt teooria.
-* 
-* 2 parandusettepanekut:
-* 
-* 1. Rohkem ärilist konteksti
-* Oleks vaja rohkem lahti kirjutada, mida tulemused päriselt ettevõtte jaoks tähendavad.
-* 
-* 2. CV ja LinkedIni selgem siht
-* Peaks paremini aru saama, mis rolli inimene täpselt otsib ja kellele ta end turundab.
-* 
-* Värbamissoovitus:
-* Lisavestlus
-* 
-* Kandidaadil on potentsiaali, aga enne lõplikku otsust tahaks intervjuul paremini aru saada tema ärilisest mõtlemisest ja sellest, kuidas ta oma tööd selgitab.
-* 
-* ---
-* 
-* ALAÜLESANDE KAART D — Tiimijuhi vaade (Team Lead)
+# Alaülesande kaart A — Palkamisjuhi vaade (HR / Hiring Manager)
 
+## Roll: A – Palkamisjuht (HR / Hiring Manager)
 
-  
-  ## Roll: D – Tiimijuht (Team Lead)
-* 
-* Ülesanne:
-* Hindasin UrbanStyle’i andmeanalüütiku portfooliot koostöö, kommunikatsiooni ja iseseisvuse vaatenurgast, tuginedes nii GitHubile kui ka varasemale meeskonnatöö kogemusele.
-* 
-* Iseseisvus:
-* Üldiselt saab kandidaat ise hakkama ja oskab ülesandeid iseseisvalt lahendada.
-* On näha, et ta otsib ise lahendusi ja õpib jooksvalt juurde.
-* Natuke võiks rohkem lahti kirjutada, miks ta mingid lahendused valis.
-* 
-  # Kommunikatsioon:
-* Suudab oma tööd enamasti arusaadavalt selgitada.
-* Samas võiks rohkem rõhutada seda, miks tema töö on ettevõtte jaoks oluline, mitte ainult mida ta tegi.
-* 
-* Koostöö:
-* Tundub, et ta on hea tiimimängija ja arvestab teistega.
-* On valmis kaasa mõtlema ja oma teadmisi jagama.
-* 
-* Arengupotentsiaal:
-* Potentsiaal on olemas junior andmeanalüütiku rolliks. Järgmine samm oleks parandada dokumentatsiooni ja keskenduda rohkem ärilisele vaatele.
-* 
-* 3 tugevust:
-* 
-* 1. Iseseisev õppija
-* Saab ise hakkama ja leiab lahendusi.
-* 
-* 2. Hea koostööoskus
-* On avatud ja töötab meeskonnas hästi.
-* 
-* 3. Analüütiline mõtlemine
-* Läheneb probleemidele loogiliselt.
-* 
-* 2 parandusettepanekut:
-* 
-* 1. Dokumentatsioon paremaks
-* Rohkem selgitusi selle kohta, mida ja miks tehti.
-* 
-* 2. Äriline kommunikatsioon
-* Rohkem rõhku sellele, kuidas tulemused ettevõtet päriselt mõjutavad.
-* 
-* Värbamissoovitus:
-* Lisavestlus
-* 
-* Enne lõplikku otsust tahaks intervjuul paremini aru saada tema mõtlemisest ja koostööviisist.
-* 
-* AI kasutamine:
-* Kasutasin AI-d, et saada ideid hindamiskriteeriumite ja tagasiside struktuuri kohta.
+## Ülesanne
+
+Hindasin UrbanStyle’i andmeanalüütiku portfooliot CV ja LinkedIni vaatenurgast.
+
+Eesmärgiks oli hinnata:
+
+- kas GitHubi projektid toetavad CV-d;
+- kas kandidaadi kogemus ja oskused vastavad otsitavale rollile;
+- kas kandidaat jätab tööandja vaates professionaalse ja selge mulje.
+
+---
+
+# CV perspektiiv
+
+CV ei anna täielikult edasi seda rolli, mida kandidaat otsib.
+
+Peamine arengukoht on:
+
+- selgema karjäärisuuna väljatoomine;
+- rohkem ärilise väärtuse ja tulemuste kirjeldamine.
+
+Samas on näha, et kandidaadil on olemas tugev tehniline baas ning projektid näitavad praktilisi andmeanalüüsi oskusi.
+
+---
+
+# LinkedIn perspektiiv
+
+LinkedIni profiil on üldiselt hea, kuid vajaks täpsemat sihtimist.
+
+Arengukohad:
+
+- praegu ei ole täielikult selge, millist rolli kandidaat otsib;
+- tugevamad projektid võiks tõsta Featured sektsiooni;
+- rohkem võiks kirjeldada projektide tulemusi ja mõju.
+
+---
+
+# Tugevused
+
+## 1. Tugev tehniline baas
+
+Kandidaat kasutab SQL-i, Pythonit ja teisi andmeanalüüsi tööriistu praktiliste ülesannete lahendamiseks.
+
+## 2. Korralik dokumentatsioon
+
+README failid annavad üldiselt hea ülevaate projektide eesmärgist, kasutatud meetoditest ja tulemustest.
+
+## 3. Praktilised projektid
+
+Projektid põhinevad päris andmeanalüüsi ülesannetel ning näitavad praktilist kogemust, mitte ainult teoreetilisi teadmisi.
+
+---
+
+# Parandusettepanekud
+
+## 1. Rohkem ärilist konteksti
+
+Projektides võiks rohkem selgitada:
+
+- mida tulemused ettevõtte jaoks tähendavad;
+- millist probleemi analüüs lahendas;
+- milline oli loodud väärtus.
+
+## 2. CV ja LinkedIni selgem siht
+
+Kandidaadi profiilist peaks kiiremini aru saama:
+
+- millist rolli ta otsib;
+- millisele tööandjale või positsioonile ta ennast suunab.
+
+---
+
+# Värbamissoovitus
+
+**Soovitus: lisavestlus**
+
+Kandidaadil on potentsiaali, kuid enne lõplikku otsust sooviks intervjuul paremini hinnata:
+
+- ärilist mõtlemist;
+- oskust oma tööd selgitada;
+- võimet siduda tehnilised lahendused ettevõtte vajadustega.
+
+---
+
+---
+
+# Alaülesande kaart D — Tiimijuhi vaade (Team Lead)
+
+## Roll: D – Tiimijuht (Team Lead)
+
+## Ülesanne
+
+Hindasin UrbanStyle’i andmeanalüütiku portfooliot koostöö, kommunikatsiooni ja iseseisvuse vaatenurgast.
+
+Hindamisel lähtusin:
+
+- GitHubi projektidest;
+- dokumentatsioonist;
+- varasemast meeskonnatöö kogemusest;
+- kandidaadi võimest oma tööd selgitada.
+
+---
+
+# Iseseisvus
+
+Kandidaat tundub olevat võimeline iseseisvalt töötama ja ülesandeid lahendama.
+
+Positiivsed märgid:
+
+- otsib ise lahendusi;
+- õpib jooksvalt juurde;
+- suudab tehnilisi probleeme iseseisvalt lahendada.
+
+Arengukoht:
+
+- rohkem võiks selgitada, miks teatud lahendused valiti ja millised alternatiivid läbi kaaluti.
+
+---
+
+# Kommunikatsioon
+
+Kandidaat suudab oma tööd üldiselt arusaadavalt kirjeldada.
+
+Arengukoht:
+
+Lisaks sellele, mida tehti, võiks rohkem rõhutada:
+
+- miks töö oli oluline;
+- kuidas tulemused ettevõtet või kasutajaid mõjutasid.
+
+---
+
+# Koostöö
+
+Kandidaadi põhjal jääb mulje, et tegemist on hea tiimiliikmega.
+
+Tugevused:
+
+- arvestab teistega;
+- on valmis kaasa mõtlema;
+- jagab teadmisi ja õpib koostöös.
+
+---
+
+# Arengupotentsiaal
+
+Kandidaadil on potentsiaali junior andmeanalüütiku rolliks.
+
+Järgmised arengusammud:
+
+- parandada dokumentatsiooni kvaliteeti;
+- keskenduda rohkem ärilise väärtuse kirjeldamisele;
+- arendada kommunikatsiooni ettevõtte vajaduste vaatenurgast.
+
+---
+
+# Tugevused
+
+## 1. Iseseisev õppija
+
+Kandidaat suudab ise uusi teadmisi omandada ja lahendusi leida.
+
+## 2. Hea koostööoskus
+
+On avatud koostööle ning töötab meeskonnas hästi.
+
+## 3. Analüütiline mõtlemine
+
+Läheneb probleemidele loogiliselt ja struktureeritult.
+
+---
+
+# Parandusettepanekud
+
+## 1. Dokumentatsiooni parandamine
+
+Lisada rohkem selgitusi:
+
+- mida tehti;
+- miks seda tehti;
+- millised olid otsuste põhjused.
+
+## 2. Äriline kommunikatsioon
+
+Rohkem keskenduda sellele:
+
+- kuidas analüüsi tulemused aitavad ettevõtet;
+- milline on töö praktiline mõju.
+
+---
+
+# Värbamissoovitus
+
+**Soovitus: lisavestlus**
+
+Enne lõplikku otsust sooviks intervjuul paremini hinnata:
+
+- kandidaadi mõtlemisprotsessi;
+- koostööviisi;
+- võimet tehnilisi teemasid teistele arusaadavalt selgitada.
+
+---
+
+# AI kasutamine
+
+Kasutasin AI-d ideede saamiseks hindamiskriteeriumite ja tagasiside struktureerimise kohta.
