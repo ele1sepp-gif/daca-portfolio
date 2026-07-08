@@ -1,79 +1,151 @@
-* Week 9 – Värbamisjuhend: CV, LinkedIn ja portfoolio hindamine
-* Ülevaade
-* 
-* Üheksandal nädalal keskendusime värbamisprotsessi loomisele tööandja vaatepunktist. Eesmärk oli koostada selge ja praktiline juhend, mis aitab hinnata andmeanalüütiku CV-d, LinkedIni ja portfooliot ühtsete kriteeriumite alusel.
-* 
-* Fookuses oli tööandja vaade ning eesmärk oli mõista, kuidas eristada tugevaid kandidaate pelgalt CV ja portfoolio põhjal ning teha seda struktureeritult ja objektiivselt.
-* 
-* Õpieesmärgid
-* 
-* Selle projekti käigus harjutasin:
-* 
-* CV ja LinkedIn profiilide hindamist tööandja vaatepunktist;
-* portfoolio ja GitHubi projektide analüüsi;
-* roheliste ja punaste lippude tuvastamist kandidaatide hindamisel;
-* struktureeritud värbamiskriteeriumite koostamist;
-* erinevate rollide (A–D) vaatepunktide kasutamist hindamisel;
-* kandidaatide hindamise standardiseerimist ja ühtlustamist.
-* 
-* Rohelised lipud
-* Konkreetsed projektid GitHubis või portfoolios
-* Mõõdetavad saavutused (nt automatiseeris aruandluse, vähendas tööaega 30%)
-* Selgelt kirjeldatud roll ja vastutus projektides
-* SQL, Python, Power BI või muud analüüsivahendid
-* Õppimine, sertifikaadid ja aktiivne eneseareng
-* GitHub või muu portfoolio olemasolu
-* Kohandatud CV konkreetsele ametikohale
-* Ajakohane ja uuendatud profiil
-* 
-* Punased lipud
-* Ainult tööriistade nimekiri ilma praktiliste näideteta
-* Väga üldsõnalised kirjeldused
-* Oskused, mida ei ole võimalik tõendada projektidega
-* Ebaausad või liialdatud väited
-* CV ei vasta kandideeritavale rollile
-* Liiga pikk CV (üle 3 lehekülje)
-* 
-* Mida võib ignoreerida
-* CV visuaalne disain (kui sisu on arusaadav)
-* Mitteseotud töö- ja kogemused
-* Vanus, sugu ja perekonnaseis
-* 
-* Hindamiskriteeriumid rolliti
-* 
-* Roll A – CV ja LinkedIn (Palkamisjuht)
-* 
-* Projektid on selgelt kirjeldatud ning näitavad probleemi, lahendust ja ärilist väärtust. CV aitab hinnata kandidaadi sobivust konkreetsele rollile.
-* 
-* Roll B – Tehniline vaade (GitHub / SQL / Python)
-* 
-* GitHub ja tehnilised materjalid näitavad praktilisi oskusi SQL-i, Pythoni ja andmeanalüüsi tööriistade kasutamisel. Kood on loetav ja dokumentatsioon on selge.
-* 
-* Roll C – CV “marketing” vaade
-* 
-* CV ja LinkedIn näitavad, kas kandidaat oskab oma oskusi ja kogemusi esitleda selgelt, struktureeritult ja väärtuspõhiselt. Oluline on “loo müümine” – mida kandidaat tegi ja mis oli tulemus.
-* 
-* Roll D – Koostöö ja kommunikatsioon
-* 
-* Projektid ja kirjeldused näitavad koostööoskust, kommunikatsiooni selgust ning võimet töötada meeskonnas. Oluline on, kas kandidaat suudab oma tööd arusaadavalt selgitada.
-* 
-* Võtmesoovitused juhile
-* Kasuta standardiseeritud hindamismaatriksit CV, GitHubi ja LinkedIni jaoks
-* Küsi alati praktilisi näiteid (SQL, Python, andmeprojektid)
-* Kasuta intervjuul praktilisi ülesandeid, mitte ainult teooriat
-* 
-* Meeskonna peamised järeldused
-* 
-* Selgus, et edukas kandidaat ei paista silma ainult oskuste loeteluga, vaid läbi konkreetsete projektide ja mõõdetavate tulemuste.
-* 
-* Lisaks on väga oluline, et CV, LinkedIn ja portfoolio moodustaksid ühtse ja loogilise loo, mitte eraldiseisvad infoallikad.
-* 
-* AI kasutamine
-* 
-* Kasutasin ChatGPT abi roheliste ja punaste lippude ning hindamiskriteeriumite struktureerimisel. AI aitas muuta tööandja vaate selgemaks ja lihtsamini rakendatavaks.
-* 
-* Olulisemad õppetunnid
-* 
-* Sain aru, et CV ja portfoolio ei ole lihtsalt kogemuse kirjeldus, vaid eneseturunduse tööriist. Oluline on mitte ainult see, mida inimene on teinud, vaid kuidas ta suudab seda selgelt ja veenvalt esitleda tööandjale.
-* 
-* Hea kandidaat on see, kes suudab oma väärtuse teha kiiresti arusaadavaks ilma lisaselgitusteta.
+# Week 9 – Värbamisjuhend: CV, LinkedIn ja portfoolio hindamine
+
+## Ülevaade
+
+Üheksandal nädalal keskendusime värbamisprotsessi loomisele tööandja vaatepunktist. Eesmärgiks oli koostada selge ja praktiline juhend, mis aitab hinnata andmeanalüütiku CV-d, LinkedIni profiili ja portfooliot ühtsete kriteeriumite alusel.
+
+Fookuses oli tööandja perspektiiv – kuidas eristada tugevaid kandidaate pelgalt CV, LinkedIni ja portfoolio põhjal ning teha seda struktureeritud ja objektiivse hindamisprotsessi abil.
+
+---
+
+## Õpieesmärgid
+
+Selle projekti käigus harjutasin:
+
+- CV ja LinkedIn profiilide hindamist tööandja vaatepunktist;
+- portfoolio ja GitHubi projektide analüüsimist;
+- roheliste ja punaste lippude tuvastamist kandidaatide hindamisel;
+- struktureeritud värbamiskriteeriumite koostamist;
+- erinevate rollide (A–D) vaatepunktide kasutamist hindamisel;
+- kandidaatide hindamise standardiseerimist ja ühtlustamist.
+
+---
+
+# Kandidaadi hindamise põhimõtted
+
+## Rohelised lipud 
+
+Tugeva kandidaadi tunnused:
+
+- Konkreetsed projektid GitHubis või portfoolios;
+- Mõõdetavad saavutused (näiteks aruandluse automatiseerimine või tööaja vähendamine 30%);
+- Selgelt kirjeldatud roll ja vastutus projektides;
+- SQL-i, Pythoni, Power BI või teiste analüüsivahendite praktiline kasutamine;
+- Õppimine, sertifikaadid ja aktiivne eneseareng;
+- GitHubi või muu portfoolio olemasolu;
+- Konkreetsele ametikohale kohandatud CV;
+- Ajakohane ja regulaarselt uuendatud profiil.
+
+---
+
+## Punased lipud 
+
+Võimalikud probleemikohad:
+
+- Ainult tööriistade nimekiri ilma praktiliste näideteta;
+- Väga üldsõnalised kirjeldused;
+- Oskused, mida ei ole võimalik projektide kaudu tõendada;
+- Ebaausad või liialdatud väited;
+- CV ei vasta kandideeritavale rollile;
+- Liiga pikk CV (üle kolme lehekülje).
+
+---
+
+## Mida hindamisel võib ignoreerida
+
+Kõik aspektid ei näita kandidaadi tegelikku võimekust.
+
+Võib vähem tähtsaks pidada:
+
+- CV visuaalset disaini, kui sisu on selge ja arusaadav;
+- Mitteseotud töö- ja varasemaid kogemusi;
+- Vanust, sugu ja perekonnaseisu.
+
+---
+
+# Hindamiskriteeriumid rolliti
+
+## Roll A – CV ja LinkedIn (palkamisjuhi vaade)
+
+Hinnatakse kandidaadi üldist sobivust rollile.
+
+Oluline on:
+
+- projektide selge kirjeldus;
+- probleemi, lahenduse ja ärilise väärtuse väljatoomine;
+- CV võime näidata kandidaadi sobivust konkreetsele ametikohale.
+
+---
+
+## Roll B – Tehniline vaade (GitHub / SQL / Python)
+
+Hinnatakse kandidaadi praktilisi tehnilisi oskusi.
+
+Oluline on:
+
+- GitHubi ja tehniliste materjalide kvaliteet;
+- SQL-i, Pythoni ja andmeanalüüsi tööriistade kasutamise näited;
+- loetav ja arusaadav kood;
+- selge dokumentatsioon.
+
+---
+
+## Roll C – CV "marketingi" vaade
+
+Hinnatakse, kuidas kandidaat oskab enda väärtust esitleda.
+
+Oluline on:
+
+- selge ja struktureeritud eneseesitlus;
+- oskuste sidumine tegelike saavutustega;
+- "loo müümine" ehk:
+  - mida kandidaat tegi;
+  - millise probleemi lahendas;
+  - milline oli tulemus.
+
+---
+
+## Roll D – Koostöö ja kommunikatsioon
+
+Hinnatakse kandidaadi võimet töötada teiste inimestega.
+
+Oluline on:
+
+- projektide ja kogemuste selge kirjeldamine;
+- kommunikatsioonioskused;
+- koostöövõime;
+- oskus oma tööd teistele arusaadavalt selgitada.
+
+---
+
+# Võtmesoovitused juhile
+
+- Kasuta standardiseeritud hindamismaatriksit CV, GitHubi ja LinkedIni hindamiseks;
+- Küsi alati praktilisi näiteid SQL-i, Pythoni ja andmeprojektide kohta;
+- Kasuta intervjuudel praktilisi ülesandeid, mitte ainult teoreetilisi küsimusi.
+
+---
+
+# Meeskonna peamised järeldused
+
+Töö käigus selgus, et edukas kandidaat ei paista silma ainult oskuste nimekirjaga, vaid eelkõige konkreetsete projektide ja mõõdetavate tulemuste kaudu.
+
+Samuti on väga oluline, et CV, LinkedIn ja portfoolio moodustaksid ühtse ning loogilise loo. Need ei peaks olema eraldiseisvad infoallikad, vaid toetama ühist professionaalset kuvandit.
+
+---
+
+# AI kasutamine
+
+Kasutasin ChatGPT abi roheliste ja punaste lippude ning hindamiskriteeriumite struktureerimisel.
+
+AI aitas muuta tööandja vaate selgemaks, organiseeritumaks ja praktilisemalt rakendatavaks.
+
+---
+
+# Olulisemad õppetunnid
+
+Sain aru, et CV ja portfoolio ei ole ainult kogemuse kirjeldused, vaid olulised eneseturunduse tööriistad.
+
+Oluline ei ole ainult see, mida inimene on teinud, vaid ka see, kuidas ta suudab oma kogemusi, oskusi ja saavutusi tööandjale selgelt ning veenvalt esitleda.
+
+Hea kandidaat on inimene, kes suudab oma väärtuse kiiresti arusaadavaks teha ilma täiendavate selgitusteta.
